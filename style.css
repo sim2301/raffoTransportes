@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-style: italic;
+    transform: skew(-10deg);
+    display: inline-block;
+    color: #fff;
+    margin-top: 5px;
+}
+/* Menu */
+.enca{
+    text-align: center;
+}
+header{
+    width: 100%;
+    background-color: grey;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;    
+    padding: 10px; 
+} 
+
+header label:hover{     
+    cursor: pointer;
+    background-color: rgba(13,13,13,0.3);
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none; 
+}
+
+.menu li a:hover {
+    text-decoration: underline; 
+}
+@media (max-width:768px) {
+    .a{
+        width: 100%;
+    }
+    header label{
+        display: block;
+        border-right: 1px solid gray;
+    }
+    header label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px; 
+    }
+    .menu{
+        position: absolute;
+        background-color: black;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        z-index: 999;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    } 
+    .menu {
+        background-color: gray;
+    }    
+}
+
+/* Carrousel */
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    background-position: center;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-image: url('image/HaJJsHqrR_2000x1500__1.jpg');
+}
+
+#itemCarrousel-2{
+    background-image: url('image/images.jpg');
+}
+
+#itemCarrousel-3{
+    background-image: url('image/images\ \(1\).jpg');
+}
+
+.itemCarrouselArrows > a > i{
+    color: black;
+}
+.itemCarrousel > div {
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .conteCarrousel {
+        height: 150px; 
+    }
+}
+
+/* Section inicio */
+#inicio{
+    margin-top: 5px;
+}
