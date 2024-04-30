@@ -166,20 +166,63 @@ header label:hover{
 
 /* Sobre la empresa */
 #sobre{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.so {
     background-color: gray;
 }
-.so1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
+.so h3{
+    text-align:left;
+    padding-bottom: 10px;
+    font-size: 1.5em;
 }
-.so1 p{
-    padding: 20px;
+.so1, .so2, .so3 {
+    display: flex;
+    align-items: center;
+}
+.so1Img {
+    width: 40%;
+    padding: 10px;
+    padding-left: 40px;
+}
+.so1Text {
+    text-align: justify;
+    width: 70%;
+    padding: 10px;
+    padding-right: 40px;
     font-size: 1.2em;
 }
-.so1 img{
-    width: 500px;
-    height: 300px;
-    margin-top: 10px;
+
+.so2{
+    flex-direction: row;
+}
+.so2Img{
+    width: 40%;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 30px;
+}
+.so2Text{
+    text-align: justify;
+    width: 70%;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 1.2em;
+}
+
+.so3{
+    flex-direction: row;
+}
+.so3Img{
+    width: 40%;
+    padding: 10px;
+    padding-left: 40px;
+}
+.so3Text {
+    text-align: justify;
+    width: 70%;
+    padding: 10px;
+    padding-right: 40px;
+    font-size: 1.2em;
 }
