@@ -19,7 +19,7 @@ h1{
 }
 header{
     width: 100%;
-    background-color: grey;
+    background-color: #ADADAD;
 }
 #btn-menu{
     display: none;
@@ -92,6 +92,10 @@ header label:hover{
 }
 
 /* Carrousel */
+.fas.fa-chevron-left, .fas.fa-chevron-right{
+    font-size: 2em;
+    color: #685e5e;
+}
 .carrousel{
     width: 100%;
 }
@@ -134,16 +138,17 @@ header label:hover{
 }
 
 #itemCarrousel-1{
-    background-image: url('image/img_carru1.jpg');
+    background-image: url(image/camiones/img_carru1.jpg);
 }
 
 #itemCarrousel-2{
-    background-image: url('image/img_carru2.png');
+    background-image: url('image/camiones/img_carru2.jpg');
 }
 
 #itemCarrousel-3{
-    background-image: url('image/img_carru3.jpg');
+    background-image: url('image/camiones/img_carru3.jpg');
 }
+
 
 .itemCarrouselArrows > a > i{
     color: black;
@@ -160,17 +165,17 @@ header label:hover{
 }
 
 /* Section inicio */
-#inicio{
+/* #inicio{
     margin-top: 5px;
-}
+} */
 
 /* Sobre la empresa */
 #sobre{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .so {
-    background-color: gray;
+    background-color: #ADADAD;
 }
 .so h3{
     text-align:left;
@@ -225,4 +230,72 @@ header label:hover{
     padding: 10px;
     padding-right: 40px;
     font-size: 1.2em;
+}
+
+/* Servicios */
+#servi{
+    background-color: #ADADAD;
+}
+.servicios h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.servicios1, .servicios2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+.servicios2{
+    padding-bottom: 10px;
+}
+
+.contServis {
+    position: relative;
+}
+
+.contServis img{
+    width: 300px;
+    height: 200px;
+}
+
+.textServi {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.6s ease;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 1.3em;
+}
+
+.contServis:hover .textServi {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+/* Clientes */
+#client{
+    background-color: #ADADAD;
+}
+.client1, .client2, .client3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.client2{
+    margin-bottom:40px ;
+}
+.clientes h2{
+    text-align: center;
+    margin: 15px;
+    font-size: 2em;
 }
