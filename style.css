@@ -60,7 +60,7 @@ header label:hover{
     }
     header label{
         display: block;
-        border-right: 1px solid gray;
+        border-right: 1px solid #ADADAD;
     }
     header label {
         display: flex;
@@ -175,7 +175,7 @@ header label:hover{
     margin-bottom: 10px;
 }
 .so {
-    background-color: #ADADAD;
+    background-color: #EBEBEB;
 }
 .so h3{
     text-align:left;
@@ -234,7 +234,7 @@ header label:hover{
 
 /* Servicios */
 #servi{
-    background-color: #ADADAD;
+    background-color: #EBEBEB;
 }
 .servicios h2{
     padding: 10px;
@@ -283,7 +283,7 @@ header label:hover{
 
 /* Clientes */
 #client{
-    background-color: #ADADAD;
+    background-color: #EBEBEB;
 }
 .client1, .client2, .client3{
     display: flex;
@@ -298,4 +298,47 @@ header label:hover{
     text-align: center;
     margin: 15px;
     font-size: 2em;
+}
+.client3{
+    padding-bottom: 15px;
+}
+
+
+/* Footer - contacto */
+footer{
+    background-color: #ADADAD;
+}
+.icon{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+    padding: 10px;
+}
+.icon.bx{
+    color: black;
+}
+#contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cont h3, .zona h3{
+    padding: 10px;
+    font-size: 1.5em;
+}
+.zona p{
+    color: #fff;
+}
+.cont span, .zona span{    
+    color: #fff;
+    padding-left: 10px;
+}
+.zona p{
+    font-size: 1.3em;
+}
+.dr{
+    /* text-align: right; */
+    text-align:end;
+    padding-right: 5% ;
+    color: #fff;
 }
