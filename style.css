@@ -72,8 +72,8 @@ header label:hover{
     .menu{
         position: absolute;
         background-color: black;
-        width: 70%;
-        margin-left: -70%;
+        width: 100%;
+        margin-left: -100%;
         transition: all 0.5s;
         z-index: 999;
     }
@@ -89,7 +89,7 @@ header label:hover{
     .menu {
         background-color: gray;
     }    
-}
+} 
 
 /* Carrousel */
 .fas.fa-chevron-left, .fas.fa-chevron-right{
@@ -164,72 +164,64 @@ header label:hover{
     }
 }
 
-/* Section inicio */
-/* #inicio{
-    margin-top: 5px;
-} */
-
 /* Sobre la empresa */
-#sobre{
-    margin-top: 20px;
-    margin-bottom: 10px;
+#sobre {
+     margin-top: 5px; 
 }
+
 .so {
-    background-color: #EBEBEB;
+    background-color: gray;
+    background-color: #ADADAD;
+    padding: 10px;
 }
-.so h3{
-    text-align:left;
+.so hr{
+    margin: 3px;
+}
+
+.so h3 {
+    text-align: left;
     padding-bottom: 10px;
     font-size: 1.5em;
 }
+
 .so1, .so2, .so3 {
     display: flex;
     align-items: center;
+    justify-content: center; 
 }
-.so1Img {
-    width: 40%;
-    padding: 10px;
-    padding-left: 40px;
+
+.so1Img, .so2Img, .so3Img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    
 }
-.so1Text {
+
+.so1Text, .so2Text, .so3Text {
+    width: 100%;
     text-align: justify;
-    width: 70%;
-    padding: 10px;
-    padding-right: 40px;
+    padding: 10px; 
     font-size: 1.2em;
 }
 
-.so2{
-    flex-direction: row;
-}
-.so2Img{
-    width: 40%;
-    padding: 10px;
-    padding-right: 40px;
-    padding-left: 30px;
-}
-.so2Text{
-    text-align: justify;
-    width: 70%;
-    padding: 10px;
-    padding-left: 40px;
-    font-size: 1.2em;
-}
+@media (max-width: 768px) {
+    .so1Img, .so2Img, .so3Img {
+        order: -1;
+        padding: 0; 
+        margin: 10px;
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
 
-.so3{
-    flex-direction: row;
-}
-.so3Img{
-    width: 40%;
-    padding: 10px;
-    padding-left: 40px;
-}
-.so3Text {
-    text-align: justify;
-    width: 70%;
-    padding: 10px;
-    padding-right: 40px;
-    font-size: 1.2em;
+    .so1, .so2, .so3 {
+        flex-direction: column;
+    }
+
+    .so1Text, .so2Text, .so3Text {
+        text-align: justify;
+        padding: 20px;
+    }
 }
 
 /* Servicios */
@@ -281,6 +273,37 @@ header label:hover{
     transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+    .servicios1,.servicios2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contServis {
+        margin-bottom: 20px; 
+        position: relative; 
+    }
+    
+    .contServis img {
+        max-width: 100%;
+        height: auto; 
+    }
+    
+    .textServi {
+        bottom: 30%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.5   );
+        border-radius: 5px;
+        font-size: 1.3em; 
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+    .textServi2, .textServi4{
+        bottom: 10% !important;
+    }
+}
+
+
 /* Clientes */
 #client{
     background-color: #EBEBEB;
@@ -302,7 +325,39 @@ header label:hover{
 .client3{
     padding-bottom: 15px;
 }
+#clientTitu{
+    display: none;
+    
+}
 
+@media only screen and (max-width: 768px) {
+    .client1 img, .client2 img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .client3, .imgb {
+        display: none;
+    }
+    
+    .client1, .client2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .client1 img, .client2 img{
+        margin: 10px;
+        width: 100%;
+        max-width: 200px; 
+        height: auto;
+    }
+    .client2{
+        margin-bottom: 0;
+    }
+    #clientTitu{
+        display: block;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
 
 /* Footer - contacto */
 footer{
@@ -337,8 +392,19 @@ footer{
     font-size: 1.3em;
 }
 .dr{
-    /* text-align: right; */
     text-align:end;
     padding-right: 5% ;
     color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    #contacto{
+        flex-direction: column;
+    }
+    .zona{
+        padding-top: 15px;
+    }
+    .zona p{
+        padding-left: 10px;
+    }
 }
